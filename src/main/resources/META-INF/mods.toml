@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="mugmansnarutomod"
+version="0.0.1 Alpha"
+displayName="MugmansNarutoMod"
+credits="Credits to everyone who supported us"
+displayURL="https://mcreator.net"
+authors="Mugman, Leonidas, Zone99"
+
+[[dependencies.mugmansnarutomod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

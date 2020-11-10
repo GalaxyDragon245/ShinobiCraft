@@ -1,0 +1,17 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "sexiness",
+    "name": "Naruto OST: Sexiness",
+    "description": "Most sexy music ever!",
+    "creativeTab": {
+      "value": "CUSTOM:NarutoMusic"
+    },
+    "music": {
+      "value": "CUSTOM:sexiness"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

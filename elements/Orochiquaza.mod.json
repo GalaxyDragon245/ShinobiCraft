@@ -1,0 +1,17 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music_disc_ward",
+    "name": "Orochiquaza",
+    "description": "OrochiQuaza Appears...",
+    "creativeTab": {
+      "value": "CUSTOM:NarutoObjects"
+    },
+    "music": {
+      "value": "CUSTOM:orochiquaza"
+    },
+    "specialInfo": [],
+    "hasGlow": true
+  }
+}

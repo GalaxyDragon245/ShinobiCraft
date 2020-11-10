@@ -1,0 +1,12 @@
+{
+  "_fv": 10,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "P",
+    "keyBindingName": "Pee",
+    "keyBindingCategoryKey": "mugmansnarutomodrp",
+    "onKeyPressed": {
+      "name": "PeeCommandExecuted"
+    }
+  }
+}

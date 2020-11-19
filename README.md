@@ -1,6 +1,6 @@
 # MugmansNarutoMod
 
-**Mugman's Naruto Mod by RealMugman and LeonidasUchiha
+Mugman's Naruto Mod by RealMugman and LeonidasUchiha
 
 My very first mod, ideated over a year ago by me and my friend
 

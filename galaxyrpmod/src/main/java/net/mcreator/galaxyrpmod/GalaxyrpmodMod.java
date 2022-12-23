@@ -21,6 +21,7 @@ import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.event.TickEvent;
@@ -30,6 +31,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
+import net.mcreator.galaxyrpmod.network.ModMessages;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModMenus;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModItems;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModEntities;
@@ -55,7 +57,15 @@ public class GalaxyrpmodMod {
 		GalaxyrpmodModEntities.REGISTRY.register(bus);
 
 		GalaxyrpmodModMenus.REGISTRY.register(bus);
+		
+		bus.addListener(this::commonSetup);
 
+	}
+	
+	private void commonSetup(final FMLCommonSetupEvent event) {
+		event.enqueueWork(() -> {
+			ModMessages.register();
+		});
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

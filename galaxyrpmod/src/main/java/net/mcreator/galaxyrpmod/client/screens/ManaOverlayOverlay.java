@@ -12,13 +12,18 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.client.Minecraft;
-
+import net.mcreator.galaxyrpmod.chakra.PlayerChakraProvider;
+import net.mcreator.galaxyrpmod.client.ClientChakraData;
 import net.mcreator.galaxyrpmod.network.GalaxyrpmodModVariables;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
 public class ManaOverlayOverlay {
+	
+	
 	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
+		int currentChakra =0;
+		int maxChakra =0;
 		int w = event.getWindow().getGuiScaledWidth();
 		int h = event.getWindow().getGuiScaledHeight();
 		int posX = w / 2;
@@ -38,16 +43,21 @@ public class ManaOverlayOverlay {
 		double x = _x;
 		double y = _y;
 		double z = _z;
-		if (true) {
-			Minecraft.getInstance().font.draw(event.getPoseStack(),
-					"" + (int) ((entity.getCapability(GalaxyrpmodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new GalaxyrpmodModVariables.PlayerVariables())).Chakra) + "",
-					posX + -207, posY + 95, -1673779);
-			Minecraft.getInstance().font.draw(event.getPoseStack(),
-					"" + (int) ((entity.getCapability(GalaxyrpmodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new GalaxyrpmodModVariables.PlayerVariables())).MaxChakra) + "",
-					posX + -207, posY + 77, -16737793);
-			Minecraft.getInstance().font.draw(event.getPoseStack(), "/", posX + -162, posY + 86, -16724737);
-		}
+		
+		Minecraft.getInstance().font.draw(event.getPoseStack(),
+				ClientChakraData.getPlayerChakra() + "/" + ClientChakraData.getPlayerMaxChakra(),
+				posX + -207, posY + 77, -16737793);
+		
+//		if (true) {
+//			Minecraft.getInstance().font.draw(event.getPoseStack(),
+//					"" + (int) ((entity.getCapability(GalaxyrpmodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+//							.orElse(new GalaxyrpmodModVariables.PlayerVariables())).Chakra) + "",
+//					posX + -207, posY + 95, -1673779);
+//			Minecraft.getInstance().font.draw(event.getPoseStack(),
+//					"" + (int) ((entity.getCapability(GalaxyrpmodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+//							.orElse(new GalaxyrpmodModVariables.PlayerVariables())).MaxChakra) + "",
+//					posX + -207, posY + 77, -16737793);
+//			Minecraft.getInstance().font.draw(event.getPoseStack(), "/", posX + -162, posY + 86, -16724737);
+//		}
 	}
 }

@@ -1,5 +1,5 @@
 
-package net.mcreator.galaxyrpmod.item;
+package net.mcreator.galaxyrpmod.item.custom;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;

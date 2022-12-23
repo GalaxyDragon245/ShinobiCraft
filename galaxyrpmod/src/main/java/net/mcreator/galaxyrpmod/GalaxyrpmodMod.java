@@ -33,7 +33,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
 import net.mcreator.galaxyrpmod.network.ModMessages;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModMenus;
-import net.mcreator.galaxyrpmod.init.GalaxyrpmodModItems;
+import net.mcreator.galaxyrpmod.item.GalaxyrpmodModItems;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModEntities;
 
 import java.util.function.Supplier;

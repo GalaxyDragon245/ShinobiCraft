@@ -2,7 +2,7 @@
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
-package net.mcreator.galaxyrpmod.init;
+package net.mcreator.galaxyrpmod.item;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -10,16 +10,16 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.Item;
 
-import net.mcreator.galaxyrpmod.item.WindReleaseGiverItem;
-import net.mcreator.galaxyrpmod.item.WaterReleaseGiverItem;
-import net.mcreator.galaxyrpmod.item.StarterKitItem;
-import net.mcreator.galaxyrpmod.item.NaturePaperItem;
-import net.mcreator.galaxyrpmod.item.MinimalChakraRestoreItem;
-import net.mcreator.galaxyrpmod.item.LightningReleaseGiverItem;
-import net.mcreator.galaxyrpmod.item.FuccItem;
-import net.mcreator.galaxyrpmod.item.FireReleaseGiverItem;
-import net.mcreator.galaxyrpmod.item.EarthReleaseGiverItem;
-import net.mcreator.galaxyrpmod.item.ChakratestweaponItem;
+import net.mcreator.galaxyrpmod.item.custom.WindReleaseGiverItem;
+import net.mcreator.galaxyrpmod.item.custom.WaterReleaseGiverItem;
+import net.mcreator.galaxyrpmod.item.custom.StarterKitItem;
+import net.mcreator.galaxyrpmod.item.custom.NaturePaperItem;
+import net.mcreator.galaxyrpmod.item.custom.MinimalChakraRestoreItem;
+import net.mcreator.galaxyrpmod.item.custom.LightningReleaseGiverItem;
+import net.mcreator.galaxyrpmod.item.custom.FuccItem;
+import net.mcreator.galaxyrpmod.item.custom.FireReleaseGiverItem;
+import net.mcreator.galaxyrpmod.item.custom.EarthReleaseGiverItem;
+import net.mcreator.galaxyrpmod.item.custom.ChakratestweaponItem;
 import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
 
 public class GalaxyrpmodModItems {

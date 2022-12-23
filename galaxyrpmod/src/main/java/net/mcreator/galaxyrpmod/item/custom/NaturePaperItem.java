@@ -1,5 +1,5 @@
 
-package net.mcreator.galaxyrpmod.item;
+package net.mcreator.galaxyrpmod.item.custom;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
@@ -9,11 +9,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.galaxyrpmod.procedures.SetNinjaStatusProcedure;
+import net.mcreator.galaxyrpmod.procedures.NaturePaperRightclickedProcedure;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
 
-public class StarterKitItem extends Item {
-	public StarterKitItem() {
+public class NaturePaperItem extends Item {
+	public NaturePaperItem() {
 		super(new Item.Properties().tab(GalaxyrpmodModTabs.TAB_SHINOBI_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
@@ -25,7 +25,7 @@ public class StarterKitItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SetNinjaStatusProcedure.execute();
+		NaturePaperRightclickedProcedure.execute();
 		return ar;
 	}
 }

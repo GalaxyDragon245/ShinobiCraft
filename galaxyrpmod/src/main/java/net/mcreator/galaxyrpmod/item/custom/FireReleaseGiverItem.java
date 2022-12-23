@@ -1,12 +1,12 @@
 
-package net.mcreator.galaxyrpmod.item;
+package net.mcreator.galaxyrpmod.item.custom;
 
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-public class WindReleaseGiverItem extends Item {
-	public WindReleaseGiverItem() {
+public class FireReleaseGiverItem extends Item {
+	public FireReleaseGiverItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

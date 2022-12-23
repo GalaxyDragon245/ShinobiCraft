@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.galaxyrpmod.network.GalaxyrpmodModVariables;
-import net.mcreator.galaxyrpmod.init.GalaxyrpmodModItems;
+import net.mcreator.galaxyrpmod.item.GalaxyrpmodModItems;
 
 import javax.annotation.Nullable;
 

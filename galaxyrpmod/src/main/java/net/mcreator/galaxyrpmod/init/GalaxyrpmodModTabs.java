@@ -4,6 +4,7 @@
  */
 package net.mcreator.galaxyrpmod.init;
 
+import net.mcreator.galaxyrpmod.item.GalaxyrpmodModItems;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 

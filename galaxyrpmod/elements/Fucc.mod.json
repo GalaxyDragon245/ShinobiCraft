@@ -1,0 +1,52 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "cosmicrelease",
+    "customModelName": "Normal",
+    "name": "test",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ShinobiCraft"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "block.glass.break"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "DepleteChakra"
+    },
+    "useCondition": {
+      "name": "FuccCanUseRangedItem"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.BUBBLE_COLUMN"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "ExplosiveTest"
+    },
+    "onBulletHitsPlayer": {
+      "name": "ExplosiveTest"
+    },
+    "onBulletHitsEntity": {
+      "name": "ExplosiveTest"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 350,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Ninjutsu>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Ninjutsu>",
+          "x": 41,
+          "y": 48
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 164,
+          "y": 25
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:SkillPoints>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:SkillPoints>",
+          "x": 252,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Kenjutsu>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Kenjutsu>",
+          "x": 41,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:MaxChakra>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:MaxChakra>",
+          "x": 41,
+          "y": 29
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Genjutsu>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Genjutsu>",
+          "x": 41,
+          "y": 82
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:Taijutsu>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:Taijutsu>",
+          "x": 41,
+          "y": 99
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "charactersheetbgtest.png",
+          "use1Xscale": false,
+          "name": "charactersheetbgtest.png",
+          "x": 38,
+          "y": 19
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "character_sheet.png",
+          "use1Xscale": false,
+          "name": "character_sheet.png",
+          "x": 38,
+          "y": 19
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,682 @@
+{
+  "mod_elements": [
+    {
+      "name": "ManaStart",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManaRegen",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_regen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManaOverlay",
+      "type": "overlay",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_overlay"
+    },
+    {
+      "name": "WeapontestRightclicked",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapontest_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MinimalChakraRestore",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minimal_chakra_restore"
+    },
+    {
+      "name": "ChakraRestorePotion",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chakra_restore_potion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chakratestweapon",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chakratestweapon"
+    },
+    {
+      "name": "StarterKit",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starter_kit"
+    },
+    {
+      "name": "ShinobiCraft",
+      "type": "tab",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shinobi_craft"
+    },
+    {
+      "name": "SetNinjaStatus",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_ninja_status",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Status"
+    },
+    {
+      "name": "StarterKitLoot",
+      "type": "loottable",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starter_kit_loot"
+    },
+    {
+      "name": "StarterItems",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starter_items",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DepleteChakra",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deplete_chakra",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fucc",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fucc"
+    },
+    {
+      "name": "ExplosiveTest",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosive_test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProjectileGravZero",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_grav_zero",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FuccCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fucc_can_use_ranged_item",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CharacterSheetKey",
+      "type": "keybind",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_sheet_key"
+    },
+    {
+      "name": "CharacterSheet",
+      "type": "gui",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "character_sheet"
+    },
+    {
+      "name": "ToggleCharacterSheet",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_character_sheet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetNinja",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_ninja",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Status"
+    },
+    {
+      "name": "NaturePaper",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_paper"
+    },
+    {
+      "name": "NaturePaperRightclicked",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_paper_rightclicked",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "WaterReleaseGiver",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_release_giver",
+      "path": "~/Releases"
+    },
+    {
+      "name": "FireReleaseGiver",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_release_giver",
+      "path": "~/Releases"
+    },
+    {
+      "name": "EarthReleaseGiver",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_release_giver",
+      "path": "~/Releases"
+    },
+    {
+      "name": "LightningReleaseGiver",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_release_giver",
+      "path": "~/Releases"
+    },
+    {
+      "name": "WindReleaseGiver",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_release_giver",
+      "path": "~/Releases"
+    },
+    {
+      "name": "SPWork",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_work",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Status"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Chakra",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "ChakraMultiplier",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ChakraStart",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "EightTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ElevenTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "FiveTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "FourTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Genjutsu",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "GrantItemOnce",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isSenju",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isUchiha",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Kenjutsu",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "MaxChakra",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "NineTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Ninjutsu",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "OneTailJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "setClan",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SevenTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SharinganUnlocked",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SixTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "SkillPoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Taijutsu",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TenTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ThreeTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TwoTailsJinch",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "MangekyoUnlocked",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "dinoSageMode",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "eagleSageMode",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasEagleSummon",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasDinoSummon",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isNinja",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasWaterRelease",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasEarthRelease",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasFireRelease",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasLightningRelease",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "hasWindRelease",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "it_it": {
+      "item.galaxyrpmod.earth_release_giver": "Earth Release Giver",
+      "item.galaxyrpmod.lightning_release_giver": "Lightning Release Giver",
+      "item.galaxyrpmod.nature_paper": "Nature Paper",
+      "item.galaxyrpmod.starter_kit": "Kit Iniziale",
+      "key.categories.sc": "ShinobiCraft",
+      "item.galaxyrpmod.minimal_chakra_restore": "Minimal Chakra Restore",
+      "item.galaxyrpmod.fucc": "Fucc",
+      "item.galaxyrpmod.fire_release_giver": "Fire Release Giver",
+      "item.galaxyrpmod.wind_release_giver": "Wind Release Giver",
+      "item.galaxyrpmod.chakratestweapon": "Chakratestweapon",
+      "itemGroup.tabshinobi_craft": "ShinobiCraft",
+      "key.galaxyrpmod.character_sheet_key": "Character Sheet",
+      "item.galaxyrpmod.water_release_giver": "Water Release Giver"
+    },
+    "en_us": {
+      "item.galaxyrpmod.earth_release_giver": "Earth Release Giver",
+      "item.galaxyrpmod.lightning_release_giver": "Lightning Release Giver",
+      "item.galaxyrpmod.nature_paper": "Nature Paper",
+      "item.galaxyrpmod.starter_kit": "Starter Kit",
+      "key.categories.sc": "ShinobiCraft",
+      "item.galaxyrpmod.minimal_chakra_restore": "Minimal Chakra Restore",
+      "item.galaxyrpmod.fucc": "test",
+      "item.galaxyrpmod.fire_release_giver": "Fire Release Giver",
+      "item.galaxyrpmod.wind_release_giver": "Wind Release Giver",
+      "item.galaxyrpmod.chakratestweapon": "Chakratestweapon",
+      "itemGroup.tabshinobi_craft": "ShinobiCraft",
+      "key.galaxyrpmod.character_sheet_key": "Character Sheet",
+      "item.galaxyrpmod.water_release_giver": "Water Release Giver"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Releases",
+        "children": []
+      },
+      {
+        "name": "Status",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "galaxyrpmod",
+    "modName": "ShinobiCraft",
+    "version": "1.0.0",
+    "description": "A mod inspired from Naruto and the anime mod from Mathioks!",
+    "author": "Macaw aka Galaxy, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "unionicon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Galaxy \u003e Models, Textures, Ideas",
+    "modElementsPackage": "net.mcreator.galaxyrpmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

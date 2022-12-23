@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="galaxyrpmod"
+version="1.0.0"
+displayName="ShinobiCraft"
+credits="Galaxy > Models, Textures, Ideas"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="Macaw aka Galaxy, MCreator"
+description='''
+A mod inspired from Naruto and the anime mod from Mathioks!
+'''
+
+[[dependencies.galaxyrpmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

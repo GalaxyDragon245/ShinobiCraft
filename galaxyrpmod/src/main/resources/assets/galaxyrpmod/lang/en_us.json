@@ -13,6 +13,8 @@
   "key.galaxyrpmod.character_sheet_key": "Character Sheet",
   "item.galaxyrpmod.water_release_giver": "Water Release Giver",
   "item.minecraft.potion.effect.minimal_chakra_restore_potion": "Minimal Chakra Restore",
+  "item.minecraft.lingering_potion.effect.minimal_chakra_restore_potion": "Lingering Minimal Chakra Restore",
+  "item.minecraft.splash_potion.effect.minimal_chakra_restore_potion": "Splash Minimal Chakra Restore",
 
   "effect.galaxyrpmod.chakra_regen": "Chakra Regen"
 

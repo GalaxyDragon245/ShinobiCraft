@@ -1,6 +1,7 @@
 
 package net.mcreator.galaxyrpmod.client.screens;
 
+import com.mojang.blaze3d.vertex.PoseStack;
 import org.checkerframework.checker.units.qual.h;
 
 import net.minecraftforge.fml.common.Mod;
@@ -43,11 +44,13 @@ public class ManaOverlayOverlay {
 		double x = _x;
 		double y = _y;
 		double z = _z;
-		
-		Minecraft.getInstance().font.draw(event.getPoseStack(),
+		PoseStack pose = event.getPoseStack();
+		pose.pushPose();
+		pose.scale(0.5f,0.5f,0.5f);
+		Minecraft.getInstance().font.draw(pose,
 				ClientChakraData.getPlayerChakra() + "/" + ClientChakraData.getPlayerMaxChakra(),
-				posX + -207, posY + 77, -16737793);
-		
+				75, 4, -16737793);
+		pose.popPose();
 //		if (true) {
 //			Minecraft.getInstance().font.draw(event.getPoseStack(),
 //					"" + (int) ((entity.getCapability(GalaxyrpmodModVariables.PLAYER_VARIABLES_CAPABILITY, null)

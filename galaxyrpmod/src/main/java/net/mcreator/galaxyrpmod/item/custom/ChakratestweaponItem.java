@@ -19,13 +19,14 @@ import net.mcreator.galaxyrpmod.procedures.WeapontestRightclickedProcedure;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
 
 import java.util.List;
+import java.util.Properties;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
 
 public class ChakratestweaponItem extends Item {
-	public ChakratestweaponItem() {
-		super(new Item.Properties().tab(GalaxyrpmodModTabs.TAB_SHINOBI_CRAFT).durability(0));
+	public ChakratestweaponItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override
@@ -48,7 +49,10 @@ public class ChakratestweaponItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		WeapontestRightclickedProcedure.execute(entity, ar.getObject());
+		if (!world.isClientSide) {
+
+			WeapontestRightclickedProcedure.execute(entity, ar.getObject());
+		}
 		return ar;
 	}
 

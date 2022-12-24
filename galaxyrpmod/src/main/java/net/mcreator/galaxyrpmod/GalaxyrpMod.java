@@ -13,6 +13,8 @@
  */
 package net.mcreator.galaxyrpmod;
 
+import net.mcreator.galaxyrpmod.effect.ModEffects;
+import net.mcreator.galaxyrpmod.potion.ModPotions;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -44,21 +46,27 @@ import java.util.ArrayList;
 import java.util.AbstractMap;
 
 @Mod("galaxyrpmod")
-public class GalaxyrpmodMod {
-	public static final Logger LOGGER = LogManager.getLogger(GalaxyrpmodMod.class);
+public class GalaxyrpMod {
+	public static final Logger LOGGER = LogManager.getLogger(GalaxyrpMod.class);
 	public static final String MODID = "galaxyrpmod";
 
-	public GalaxyrpmodMod() {
+	public GalaxyrpMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		GalaxyrpmodModTabs.load();
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		GalaxyrpmodModItems.REGISTRY.register(bus);
-		GalaxyrpmodModEntities.REGISTRY.register(bus);
+		GalaxyrpmodModItems.register(modEventBus);
 
-		GalaxyrpmodModMenus.REGISTRY.register(bus);
+
+		GalaxyrpmodModItems.REGISTRY.register(modEventBus);
+		GalaxyrpmodModEntities.REGISTRY.register(modEventBus);
+
+		ModEffects.register(modEventBus);
+		ModPotions.register(modEventBus);
+
+		GalaxyrpmodModMenus.REGISTRY.register(modEventBus);
 		
-		bus.addListener(this::commonSetup);
+		modEventBus.addListener(this::commonSetup);
 
 	}
 	

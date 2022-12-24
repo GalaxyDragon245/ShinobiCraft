@@ -13,8 +13,8 @@ import net.mcreator.galaxyrpmod.procedures.SetNinjaStatusProcedure;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
 
 public class StarterKitItem extends Item {
-	public StarterKitItem() {
-		super(new Item.Properties().tab(GalaxyrpmodModTabs.TAB_SHINOBI_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
+	public StarterKitItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override

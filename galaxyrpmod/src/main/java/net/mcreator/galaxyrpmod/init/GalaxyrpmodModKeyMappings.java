@@ -16,7 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.galaxyrpmod.network.CharacterSheetKeyMessage;
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class GalaxyrpmodModKeyMappings {
@@ -27,7 +27,7 @@ public class GalaxyrpmodModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				GalaxyrpmodMod.PACKET_HANDLER.sendToServer(new CharacterSheetKeyMessage(0, 0));
+				GalaxyrpMod.PACKET_HANDLER.sendToServer(new CharacterSheetKeyMessage(0, 0));
 				CharacterSheetKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;

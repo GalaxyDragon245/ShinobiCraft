@@ -1,5 +1,6 @@
 package net.mcreator.galaxyrpmod.procedures;
 
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -9,7 +10,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.galaxyrpmod.network.GalaxyrpmodModVariables;
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
 
 import javax.annotation.Nullable;
 
@@ -33,7 +33,7 @@ public class ManaRegenProcedure {
 				.orElse(new GalaxyrpmodModVariables.PlayerVariables())).Chakra < (entity
 						.getCapability(GalaxyrpmodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new GalaxyrpmodModVariables.PlayerVariables())).MaxChakra) {
-			GalaxyrpmodMod.queueServerWork(1, () -> {
+			GalaxyrpMod.queueServerWork(1, () -> {
 				{
 					double _setval = (entity.getCapability(GalaxyrpmodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new GalaxyrpmodModVariables.PlayerVariables())).Chakra + 0.01;

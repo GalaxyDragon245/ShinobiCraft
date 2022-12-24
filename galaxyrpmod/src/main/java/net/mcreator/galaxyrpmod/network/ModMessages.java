@@ -1,11 +1,10 @@
 package net.mcreator.galaxyrpmod.network;
 
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 import net.mcreator.galaxyrpmod.network.packet.ChakraDataSyncS2cPaket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
-import net.minecraftforge.network.NetworkEvent.PacketDispatcher;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.simple.SimpleChannel;
@@ -21,7 +20,7 @@ public class ModMessages {
 	
 	public static void register() {
 		SimpleChannel net = NetworkRegistry.ChannelBuilder
-				.named(new ResourceLocation(GalaxyrpmodMod.MODID, "messages"))
+				.named(new ResourceLocation(GalaxyrpMod.MODID, "messages"))
 				.networkProtocolVersion(() -> "1.0")
 				.clientAcceptedVersions(s -> true)
 				.serverAcceptedVersions(s -> true)

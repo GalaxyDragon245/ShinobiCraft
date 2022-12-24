@@ -1,9 +1,9 @@
 package net.mcreator.galaxyrpmod.procedures;
 
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.galaxyrpmod.network.GalaxyrpmodModVariables;
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
 
 public class SetNinjaProcedure {
 	public static void execute(Entity entity) {
@@ -60,7 +60,7 @@ public class SetNinjaProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			GalaxyrpmodMod.LOGGER.info("You Became a Ninja!");
+			GalaxyrpMod.LOGGER.info("You Became a Ninja!");
 		}
 	}
 }

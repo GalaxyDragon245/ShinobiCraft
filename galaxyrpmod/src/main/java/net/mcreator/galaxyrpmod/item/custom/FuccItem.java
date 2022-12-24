@@ -19,8 +19,8 @@ import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
 import net.mcreator.galaxyrpmod.entity.FuccEntity;
 
 public class FuccItem extends Item {
-	public FuccItem() {
-		super(new Item.Properties().tab(GalaxyrpmodModTabs.TAB_SHINOBI_CRAFT).stacksTo(1));
+	public FuccItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override

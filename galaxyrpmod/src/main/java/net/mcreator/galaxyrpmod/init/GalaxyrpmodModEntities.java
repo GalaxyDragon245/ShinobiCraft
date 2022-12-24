@@ -4,6 +4,7 @@
  */
 package net.mcreator.galaxyrpmod.init;
 
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,11 +18,10 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.galaxyrpmod.entity.FuccEntity;
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GalaxyrpmodModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, GalaxyrpmodMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, GalaxyrpMod.MODID);
 	public static final RegistryObject<EntityType<FuccEntity>> FUCC = register("projectile_fucc",
 			EntityType.Builder.<FuccEntity>of(FuccEntity::new, MobCategory.MISC).setCustomClientFactory(FuccEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));

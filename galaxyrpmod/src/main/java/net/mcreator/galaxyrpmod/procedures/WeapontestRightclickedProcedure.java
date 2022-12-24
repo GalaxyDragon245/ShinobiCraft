@@ -1,5 +1,6 @@
 package net.mcreator.galaxyrpmod.procedures;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
@@ -27,7 +28,7 @@ public class WeapontestRightclickedProcedure {
 			if(chakra.getChakra() > 9) {
 				chakra.subChakra(10);
 				//entity.sendSystemMessage(Component.literal("removed chakra Current: " + chakra.getChakra()));
-				ModMessages.sendToPlayer(new ChakraDataSyncS2cPaket(chakra.getChakra(), chakra.getMaxChakra()), (ServerPlayer)entity);
+				ModMessages.sendToPlayer(new ChakraDataSyncS2cPaket(chakra.getChakra(), chakra.getMaxChakra()), (ServerPlayer) entity);
 				{
 					Entity _shootFrom = entity;
 					Level projectileLevel = _shootFrom.level;

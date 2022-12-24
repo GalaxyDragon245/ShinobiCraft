@@ -11,5 +11,9 @@
   "item.galaxyrpmod.chakratestweapon": "Chakratestweapon",
   "itemGroup.tabshinobi_craft": "ShinobiCraft",
   "key.galaxyrpmod.character_sheet_key": "Character Sheet",
-  "item.galaxyrpmod.water_release_giver": "Water Release Giver"
+  "item.galaxyrpmod.water_release_giver": "Water Release Giver",
+  "item.minecraft.potion.effect.minimal_chakra_restore_potion": "Minimal Chakra Restore",
+
+  "effect.galaxyrpmod.chakra_regen": "Chakra Regen"
+
 }

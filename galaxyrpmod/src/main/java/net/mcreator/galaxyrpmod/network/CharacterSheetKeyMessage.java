@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.galaxyrpmod.procedures.ToggleCharacterSheetProcedure;
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 
 import java.util.function.Supplier;
 
@@ -58,7 +58,7 @@ public class CharacterSheetKeyMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		GalaxyrpmodMod.addNetworkMessage(CharacterSheetKeyMessage.class, CharacterSheetKeyMessage::buffer, CharacterSheetKeyMessage::new,
+		GalaxyrpMod.addNetworkMessage(CharacterSheetKeyMessage.class, CharacterSheetKeyMessage::buffer, CharacterSheetKeyMessage::new,
 				CharacterSheetKeyMessage::handler);
 	}
 }

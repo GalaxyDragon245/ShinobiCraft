@@ -14,11 +14,8 @@ import net.mcreator.galaxyrpmod.procedures.ChakraRestorePotionProcedure;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
 
 public class MinimalChakraRestoreItem extends Item {
-	public MinimalChakraRestoreItem() {
-		super(new Item.Properties().tab(GalaxyrpmodModTabs.TAB_SHINOBI_CRAFT).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).alwaysEat()
-
-						.build()));
+	public MinimalChakraRestoreItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override

@@ -2,12 +2,11 @@ package net.mcreator.galaxyrpmod.events;
 
 
 
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 import net.mcreator.galaxyrpmod.chakra.PlayerChakra;
 import net.mcreator.galaxyrpmod.chakra.PlayerChakraProvider;
 import net.mcreator.galaxyrpmod.network.ModMessages;
 import net.mcreator.galaxyrpmod.network.packet.ChakraDataSyncS2cPaket;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -21,14 +20,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = GalaxyrpmodMod.MODID)
+@Mod.EventBusSubscriber(modid = GalaxyrpMod.MODID)
 public class ModEvents {
 	
 	@SubscribeEvent
 	public static void onAttachCapabilitiesPlayer(AttachCapabilitiesEvent<Entity> event) {
 		if(event.getObject() instanceof Player) {
 			if(!event.getObject().getCapability(PlayerChakraProvider.PLAYER_CHAKRA).isPresent()) {
-				event.addCapability(new ResourceLocation(GalaxyrpmodMod.MODID, "properties"), new PlayerChakraProvider());
+				event.addCapability(new ResourceLocation(GalaxyrpMod.MODID, "properties"), new PlayerChakraProvider());
 			}
 		}
 	}

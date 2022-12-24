@@ -1,5 +1,6 @@
 package net.mcreator.galaxyrpmod.network;
 
+import net.mcreator.galaxyrpmod.GalaxyrpMod;
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -25,15 +26,13 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.galaxyrpmod.GalaxyrpmodMod;
-
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GalaxyrpmodModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		GalaxyrpmodMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new,
+		GalaxyrpMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new,
 				PlayerVariablesSyncMessage::handler);
 	}
 
@@ -185,7 +184,7 @@ public class GalaxyrpmodModVariables {
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
-				GalaxyrpmodMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
+				GalaxyrpMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
 		}
 
 		public Tag writeNBT() {

@@ -13,8 +13,8 @@ import net.mcreator.galaxyrpmod.procedures.NaturePaperRightclickedProcedure;
 import net.mcreator.galaxyrpmod.init.GalaxyrpmodModTabs;
 
 public class NaturePaperItem extends Item {
-	public NaturePaperItem() {
-		super(new Item.Properties().tab(GalaxyrpmodModTabs.TAB_SHINOBI_CRAFT).stacksTo(64).rarity(Rarity.COMMON));
+	public NaturePaperItem(Properties properties) {
+		super(properties);
 	}
 
 	@Override

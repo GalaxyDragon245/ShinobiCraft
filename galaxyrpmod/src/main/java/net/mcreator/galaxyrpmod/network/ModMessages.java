@@ -2,6 +2,7 @@ package net.mcreator.galaxyrpmod.network;
 
 import net.mcreator.galaxyrpmod.GalaxyrpMod;
 import net.mcreator.galaxyrpmod.network.packet.ChakraDataSyncS2cPaket;
+import net.mcreator.galaxyrpmod.network.packet.ChakraRegenC2sPaket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
@@ -33,6 +34,12 @@ public class ModMessages {
 		.encoder(ChakraDataSyncS2cPaket::toBytes)
 		.consumerMainThread(ChakraDataSyncS2cPaket::handle)
 		.add();
+
+		net.messageBuilder(ChakraRegenC2sPaket.class, id(), NetworkDirection.PLAY_TO_SERVER)
+				.decoder(ChakraRegenC2sPaket::new)
+				.encoder(ChakraRegenC2sPaket::toBytes)
+				.consumerMainThread(ChakraRegenC2sPaket::handle)
+				.add();
 	}
 	
 	

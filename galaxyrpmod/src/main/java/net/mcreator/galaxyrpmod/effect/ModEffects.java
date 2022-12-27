@@ -16,6 +16,9 @@ public class ModEffects {
     public static final RegistryObject<MobEffect> CHAKRA_REGEN = MOB_EFFECTS.register("chakra_regen",
             () -> new ChakraRegenEffect(MobEffectCategory.BENEFICIAL, 3124687));
 
+    public static final RegistryObject<MobEffect> CHAKRA_KEY_REGEN = MOB_EFFECTS.register("chakra_key_regen",
+            () -> new ChakraRegenEffect(MobEffectCategory.BENEFICIAL, 0));
+
     public static void register(IEventBus bus){
         MOB_EFFECTS.register(bus);
     }

@@ -13,8 +13,11 @@
  */
 package net.mcreator.galaxyrpmod;
 
+import net.mcreator.galaxyrpmod.config.ModCommonConfigs;
 import net.mcreator.galaxyrpmod.effect.ModEffects;
 import net.mcreator.galaxyrpmod.potion.ModPotions;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.config.ModConfig;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -65,6 +68,8 @@ public class GalaxyrpMod {
 		ModPotions.register(modEventBus);
 
 		GalaxyrpmodModMenus.REGISTRY.register(modEventBus);
+
+		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModCommonConfigs.SPEC, "galaxyrpmod-common.toml");
 		
 		modEventBus.addListener(this::commonSetup);
 

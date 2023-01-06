@@ -1,11 +1,12 @@
 package net.mcreator.galaxyrpmod.Points;
 
+import net.mcreator.galaxyrpmod.config.ModCommonConfigs;
 import net.minecraft.nbt.CompoundTag;
 
 public class PlayerPoints {
 	private int Points = 0;
 	private int Kills = 0;
-	private static final int KillsPerPoint =3;
+	private static final int KillsPerPoint = ModCommonConfigs.MOB_KILLS_PER_POINT.get();
 	public int getPoints() {
 		return Points;
 	}

@@ -3,22 +3,28 @@ package net.mcreator.galaxyrpmod.events;
 
 
 import net.mcreator.galaxyrpmod.GalaxyrpMod;
+import net.mcreator.galaxyrpmod.Points.PlayerPoints;
+import net.mcreator.galaxyrpmod.Points.PlayerPointsProvider;
 import net.mcreator.galaxyrpmod.chakra.PlayerChakra;
 import net.mcreator.galaxyrpmod.chakra.PlayerChakraProvider;
 import net.mcreator.galaxyrpmod.network.ModMessages;
 import net.mcreator.galaxyrpmod.network.packet.ChakraDataSyncS2cPaket;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
+import org.openjdk.nashorn.api.scripting.ScriptObjectMirror;
 
 @Mod.EventBusSubscriber(modid = GalaxyrpMod.MODID)
 public class ModEvents {
@@ -28,6 +34,9 @@ public class ModEvents {
 		if(event.getObject() instanceof Player) {
 			if(!event.getObject().getCapability(PlayerChakraProvider.PLAYER_CHAKRA).isPresent()) {
 				event.addCapability(new ResourceLocation(GalaxyrpMod.MODID, "properties"), new PlayerChakraProvider());
+			}
+			if(!event.getObject().getCapability(PlayerPointsProvider.PLAYER_POINTS).isPresent()) {
+				event.addCapability(new ResourceLocation(GalaxyrpMod.MODID, "points"), new PlayerPointsProvider());
 			}
 		}
 	}
@@ -40,12 +49,18 @@ public class ModEvents {
 					newStore.copyFrom(oldStore);
 				});
 			});
+			event.getOriginal().getCapability(PlayerPointsProvider.PLAYER_POINTS).ifPresent(oldStore -> {
+				event.getOriginal().getCapability(PlayerPointsProvider.PLAYER_POINTS).ifPresent(newStore -> {
+					newStore.copyFrom(oldStore);
+				});
+			});
 		}
 	}
 	
 	@SubscribeEvent
 	public static void onRegisterCapabilities(RegisterCapabilitiesEvent event) {
 		event.register(PlayerChakra.class);
+		event.register(PlayerPoints.class);
 	}
 	
 	@SubscribeEvent
@@ -58,6 +73,7 @@ public class ModEvents {
 					//event.player.sendSystemMessage(Component.literal("added Chakra, current: " + chakra.getChakra() ));
 				}
 			});
+
 		}
 	}
 	
@@ -69,6 +85,18 @@ public class ModEvents {
 					ModMessages.sendToPlayer(new ChakraDataSyncS2cPaket(chakra.getChakra(), chakra.getMaxChakra()), player);
 				});
 			}
+		}
+	}
+
+	@SubscribeEvent
+	public static void onEntityDeath(LivingDeathEvent event){
+		if(event.getEntity() instanceof Monster && event.getSource().getEntity() instanceof ServerPlayer player){
+			//TODO add kill to player count
+			player.getCapability(PlayerPointsProvider.PLAYER_POINTS).ifPresent(points -> {
+				points.addKill(1);
+				player.sendSystemMessage(Component.literal("current points: " + points.getPoints()));
+					});
+
 		}
 	}
 

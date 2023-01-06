@@ -1,14 +1,12 @@
 package net.mcreator.galaxyrpmod.procedures;
 
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.RandomSource;
 import net.mcreator.galaxyrpmod.chakra.PlayerChakraProvider;
@@ -35,7 +33,7 @@ public class WeapontestRightclickedProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new Arrow(EntityType.ARROW, level);
+								AbstractArrow entityToSpawn = new Arrow(level, (LivingEntity) entity);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
 								return entityToSpawn;

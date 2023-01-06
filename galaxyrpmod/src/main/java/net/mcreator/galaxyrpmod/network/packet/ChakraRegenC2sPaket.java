@@ -33,10 +33,10 @@ public class ChakraRegenC2sPaket {
 
 			if (regen){
 				//player.sendSystemMessage(Component.literal("message recieved regen: true"));
-			player.addEffect(new MobEffectInstance(ModEffects.CHAKRA_KEY_REGEN.get(),10000));
+			player.addEffect(new MobEffectInstance(ModEffects.CHAKRA_KEY_REGEN.get(),0));
 			} else {
 				//player.sendSystemMessage(Component.literal("message recieved regen: false"));
-				player.removeEffect(ModEffects.CHAKRA_REGEN.get());
+				player.removeEffect(ModEffects.CHAKRA_KEY_REGEN.get());
 			}
 		});
 		return true;

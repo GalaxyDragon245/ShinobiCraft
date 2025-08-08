@@ -1,6 +1,6 @@
-# MugmansNarutoMod
+# CyberRaptor's Naruto Mod
 
-Mugman's Naruto Mod by RealMugman and LeonidasUchiha
+CyberRaptor's Naruto Mod by Galaxy/Raptor and LeonidasUchiha
 
 My very first mod, ideated over a year ago by me and my friend
 

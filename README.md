@@ -1,7 +1,7 @@
 # CyberRaptor's Naruto Mod
 
-CyberRaptor's Naruto Mod by Galaxy/Raptor and LeonidasUchiha
+## Thanks to the best Developers in the world Mnemo and zSoupDev - <3
 
-My very first mod, ideated over a year ago by me and my friend
+CyberRaptor's Naruto Mod by Galaxy/Raptor and Zoon_Turc
 
-Project ideated during summer 2018/2019, we started working on this project just recently, adding it as a feature for a roleplay server.
+Project ideated during summer 2018, we started working on this project just recently, now it will be used a feature for a roleplay server.

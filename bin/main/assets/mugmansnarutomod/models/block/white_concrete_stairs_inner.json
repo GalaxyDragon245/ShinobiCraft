@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "mugmansnarutomod:blocks/white_concrete",
-    "top": "mugmansnarutomod:blocks/white_concrete",
-    "side": "mugmansnarutomod:blocks/white_concrete"
-  }
-}

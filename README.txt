@@ -1,6 +1,6 @@
 # CyberRaptor's Naruto Mod
 
-### Thanks to our Developer: Coofi - <3
+### Thanks to the best Developers (And Friends) in the world: Mnemo and zSoupDev - <3
 ### Thanks to my childhood friend: Zoon_Turc - <3
 
 CyberRaptor's Naruto Mod by Galaxy/Raptor and Zoon_Turc

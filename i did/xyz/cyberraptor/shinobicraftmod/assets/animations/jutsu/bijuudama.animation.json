@@ -1,0 +1,87 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"bijuudama.create": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4.5,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.5": {
+							"pre": [0, -15000, 0],
+							"post": [0, -15000, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": [0, 90, 0],
+					"scale": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"4.5": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"bone2": {
+					"position": [0, 200, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "bluechakra",
+					"locator": "locator"
+				}
+			}
+		},
+		"bijuudama.extinguish": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [0, 15000, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": [0, 100, 0],
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"bijuudama.launch": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [0, -15000, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 100, 0],
+						"0.5": [0, 10, -180]
+					},
+					"scale": 1
+				}
+			}
+		}
+	}
+}

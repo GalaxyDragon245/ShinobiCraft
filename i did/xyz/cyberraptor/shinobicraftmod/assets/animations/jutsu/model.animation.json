@@ -1,0 +1,93 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.model.explosion": {
+			"loop": true
+		},
+		"animation.model.create": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 5.5,
+			"bones": {
+				"explosion": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"5.5": {
+							"vector": [20000, 20000, 20000]
+						}
+					},
+					"position": {
+						"vector": [0, -5, 0]
+					},
+					"scale": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [5, 5, 5]
+						},
+						"1.5": {
+							"vector": [7, 7, 7]
+						},
+						"2.0": {
+							"vector": [5, 5, 5]
+						},
+						"2.5": {
+							"vector": [3, 3, 3]
+						},
+						"3.0": {
+							"vector": [5, 5, 5]
+						},
+						"3.5": {
+							"vector": [7, 7, 7]
+						},
+						"4.0": {
+							"vector": [5, 5, 5]
+						},
+						"4.5": {
+							"vector": [7, 7, 7]
+						},
+						"5.0": {
+							"vector": [5, 5, 5]
+						},
+						"5.5": {
+							"vector": [3, 3, 3]
+						}
+					}
+				}
+			}
+		},
+		"animation.model.extinguish": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"explosion": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [20000, 20000, 20000]
+						}
+					},
+					"position": {
+						"vector": [0, -5, 0]
+					},
+					"scale": {
+						"0.0": {
+							"vector": [5, 5, 5]
+						},
+						"0.5": {
+							"vector": [7, 7, 7]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -1,0 +1,69 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cosmicascent.create": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"hexadecagon": {
+					"scale": {
+						"0.0": {
+							"vector": [0, 1, 1]
+						},
+						"0.25": {
+							"vector": [3.3, 1, 1]
+						}
+					}
+				}
+			}
+		},
+		"animation.cosmicascent.create_dissipate": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"bone": {
+					"scale": {
+						"0.2083": {
+							"vector": [1, 1, 1]
+						},
+						"0.4583": {
+							"vector": [0, 1, 1]
+						}
+					}
+				},
+				"hexadecagon": {
+					"scale": {
+						"0.0": {
+							"vector": [0, 1, 1]
+						},
+						"0.25": {
+							"vector": [3.3, 1, 1]
+						}
+					}
+				}
+			}
+		},
+		"animation.cosmicascent.dissipate": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"bones": {
+				"hexadecagon": {
+					"scale": {
+						"vector": [3.3, 1, 1]
+					}
+				},
+				"bone": {
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"0.25": {
+							"vector": [0, 1, 1]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
